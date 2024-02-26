@@ -17,6 +17,8 @@ const { pageTitle } = Astro.props;
   <body>
     <Header />
     <h1>{pageTitle}</h1>
+    <!-- La etiqueta <slot/> permite inyectar contenido hijo escrito entre las etiquetas de apertura y cierre
+    <Component></Component> en cualquier archivo Component.astro -->
     <slot />
     <Footer />
     <script>
